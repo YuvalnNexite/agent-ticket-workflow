@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Ticket Workflow"
+  short_description: "Guide Jira-ticket work from idea to PR"
+  default_prompt: "Use $agent-ticket-workflow to turn a Jira ticket or feature idea into an implementation plan, code changes, QA loop, and PR."

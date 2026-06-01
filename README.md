@@ -2,6 +2,17 @@
 
 A reusable agent skill for driving ticket-based work from ticket refinement through planning, implementation, QA, and PR creation.
 
+## Underlying Principles
+
+- Repo-agnostic: define a reusable delivery process and defer repository-specific rules, patterns, and tooling to repo-local instructions.
+- Modular: keep the skill split into small stage files with clear responsibilities.
+- Minimal: keep the top-level surface small and stable, and move stage detail into references.
+- Progressive: load instructions incrementally instead of front-loading the entire workflow into context.
+- Model-leveraging, not micromanaging: provide structure, gates, and quality bars without hard-coding every execution detail.
+- Durable to model improvement: prefer principles and decision boundaries over brittle instructions that assume one fixed working style.
+- As simple as possible: keep only rules that materially improve reliability, clarity, or quality.
+- Graceful under limited tooling: keep the workflow usable even when Jira or GitHub integrations are unavailable by falling back to copy-ready artifacts.
+
 ## What It Expects
 
 - A host that supports `SKILL.md`-style skills and relative `references/` loading.

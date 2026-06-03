@@ -9,7 +9,7 @@ Use this stage to turn a user idea, bug, parent ticket, or under-specified exist
 3. Treat the ticket as under-specified when it lacks concrete acceptance criteria, understandable scope, key assumptions, or contains vague language such as "and more", "etc.", "fix weirdness", or similar open-ended wording.
 4. Decide the issue type: story for user-facing capability, task for technical work, subtask when the user gives a parent issue.
 5. Draft a new or refined ticket and show it in full to the user before creating or updating it.
-6. Iterate and ask questions and reiterate assumptions until you are both on the same page and the user explicitly approves the ticket.
+6. Iterate and ask questions and reiterate assumptions until you are both on the same page and the user explicitly approves the ticket and where to put it.
 7. Create or update the Jira issue after confirmation.
 8. Report the key, link, and final title.
 

@@ -41,3 +41,4 @@ Additional context:
 - Missing Information should call out missing product, data, design, permission, environment, migration, or API decisions.
 - Additional context should capture the intent, constraints, and non-goals clearly enough that later stages can plan the work without guessing the product logic.
 - Existing Jira tickets that fall short of this quality bar are usually worth refining before implementation planning. The presence of a Jira key, assignee, sprint, or status is not much evidence on its own that the ticket is ready.
+- Jira ticket status is updated along the way, stopping short of done status, only the user can move the status to done. 

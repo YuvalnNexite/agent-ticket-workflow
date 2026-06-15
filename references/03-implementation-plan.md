@@ -4,28 +4,28 @@ Use this stage to translate a confirmed, concrete Jira ticket into a simple, con
 
 ## Required Context
 
-- Jira key, title, issue type, and parent issue if any.
+- Jira key, title, issue type and parent issue if any.
 - Acceptance criteria.
-- Relevant context from the ticket description, comments, linked issues, dependencies, constraints, and validation expectations.
-- Repo-local instructions such as `AGENTS.md`, `CLAUDE.md`, `README.md`, contribution docs, architecture docs, and test instructions.
-- Relevant code paths, owners, existing patterns, and dependency constraints.
+- Relevant context from the ticket description, comments, linked issues, dependencies, constraints and validation expectations.
+- Repo-local instructions such as `AGENTS.md`, `CLAUDE.md`, `README.md`, contribution docs, architecture docs and test instructions.
+- Relevant code paths, owners, existing patterns and dependency constraints.
 
 If required ticket context is missing or vague, return to `references/01-ticket-creation.md`.
 
 ## Planning Workflow
 
-During this stage, inspect the code enough to understand how the change should actually be implemented, then plan the full change before asking the human to review anything. The agent should think through the likely code edits, affected files, tests, QA, rollout concerns, and edge cases up front, while keeping track of assumptions and questions alongside recommendations or suggested answers grounded in best practices, good taste, and reasonable scope control.
+During this stage, inspect the code enough to understand how the change should actually be implemented, then plan the full change before asking the human to review anything. The agent should think through the likely code edits, affected files, tests, QA, rollout concerns and edge cases up front, while keeping track of assumptions and questions alongside recommendations or suggested answers grounded in best practices, good taste, and reasonable scope control.
 
 Suggested flow:
 
 1. Inspect the likely code paths and form a concrete implementation approach.
-2. Plan the change, affected files, tests, QA, and validation approach.
+2. Plan the change, affected files, tests, QA and validation approach.
 3. Look for the impact and downstream impact the change causes, edit the plan accordingly. 
-4. Keep track of assumptions and questions that affect scope, behavior, implementation choices, data shape, testing, rollout, or risk.
+4. Keep track of assumptions and questions that affect scope, behavior, implementation choices, data shape, testing, rollout or risk.
 5. For each assumption or question, include recommendations with good engineering judgment. Include Both the best and most practical/efficient way. mark questions and assumptions with numbers and recommendations with letters for easy reference.
 6. Show the implementation plan first, as you currently believes the change should be done.
 7. After the plan, show the assumptions and questions with their recommendations, then ask the human to review and answer them.
-8. Update the plan, assumptions, and questions based on the answers.
+8. Update the plan, assumptions and questions based on the answers.
 9. Add any new assumptions or questions created by those answers.
 10. Repeat until the human explicitly says the plan is good.
 
@@ -82,13 +82,12 @@ Branch:
 
 ## Output
 
-Present the implementation plan in full first, then the assumptions and questions with recommendations, and ask the human to review and answer them. Iterate until the user explicitly says the plan is good. Hold off on implementation until that approval is clear.
+Present the implementation plan in full first, then the assumptions and questions with recommendations and ask the human to review and answer them. Iterate until the user explicitly says the plan is good. Hold off on implementation until that approval is clear.
 
 
 ## Jira handling
 
-- Create a subtask (if its already a subtask then a linked task) that includes the full implementation plan, and keep updating the status as you go.
 - Leave the status short of `Done`; the user will decide when it is ready to move there.
-- include the tickets created (with a working link) in the final summary alongside the plan.
+- include the tickets (with a working link) in the final summary alongside the plan.
 - keep the Jira ticket updated with the working plan
 

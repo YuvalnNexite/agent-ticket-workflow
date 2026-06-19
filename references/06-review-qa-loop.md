@@ -22,6 +22,7 @@ Run the checks appropriate for the repo and plan:
 - Lint, formatting, type checks, static analysis, or SQL validators when present.
 - Manual QA or local app verification when automated coverage is insufficient.
 - Migration validation or dry-runs where relevant.
+- Validation and regression tests 
 
 ## Loop
 

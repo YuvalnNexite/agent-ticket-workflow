@@ -9,7 +9,7 @@ Use this stage to publish the completed and QA'd implementation. Default to GitH
 3. Push the branch.
 4. Create a PR against the repo's expected branch.
 5. Include ticket link/key, summary, tests, QA, risks, screenshots or artifacts when relevant, and follow-up items.
-6. Check on CI/CD untill it passes. If it fails fix the issues.
+6. Check on CI/CD via heartbeat until it passes. If it fails fix the issues.
 
 ## PR Template
 

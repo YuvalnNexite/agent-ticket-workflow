@@ -16,7 +16,7 @@ If required ticket context is missing or vague, return to `references/01-ticket-
 
 During this stage, inspect the code enough to understand how the change should actually be implemented, then plan the full change before asking the human to review anything. The agent should think through the likely code edits, affected files, tests, QA, rollout concerns and edge cases up front, while keeping track of assumptions and questions alongside recommendations or suggested answers grounded in best practices, good taste, and reasonable scope control.
 
-Suggested flow:
+flow:
 
 1. Inspect the likely code paths and form a concrete implementation approach.
 2. Plan the change, affected files, tests, QA and validation approach.
